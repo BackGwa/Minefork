@@ -550,14 +550,11 @@ var RandomLevel = function(){
     }
     progress.percent = 100;
     self.postMessage(progress);
-    progress.string = "Melting..";
-    //this.progressRenderer.progressStage("Melting..");
+    progress.string = "맵 생성 중...";
     this.melt();
-    progress.string = "Growing..";
-    //this.progressRenderer.progressStage("Growing..");
+    progress.string = "맵 생성 중...";
     this.grow(aint);
-    progress.string = "Planting..";
-    //this.progressRenderer.progressStage("Planting..");
+    progress.string = "맵 생성 중...";
     this.plant(aint);
     progress.tiles = this.tiles;
     progress.string = "";
