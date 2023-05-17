@@ -13994,7 +13994,7 @@
   }).call(this,i(27),i(15))
 },function(e,t){},function(e,t,i){},function(e,t){
   e.exports = {
-    backendBaseUrl: "https://9p1bb7fwdf.execute-api.us-east-1.amazonaws.com/prod"
+    backendBaseUrl: null
   }
 },function(e,t,i){
   "use strict";
