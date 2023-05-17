@@ -63216,7 +63216,7 @@
       },u.src = "textures/dirt.png";
       var l = r.createPattern(a,"repeat"),
         h = {
-          headline: "Generating level",
+          headline: "새로운 레벨 생성",
           task: "",
           percent: 0,
           isOpen: !0,
@@ -63405,7 +63405,7 @@
               a.font = 16 * t + "px Minecraft",a.textBaseline = "alphabetic",a.textAlign = "center";
               var r = 2 * t;
               a.fillStyle = "rgb(63,63,63)",a.fillText(e,i + r,n + r),a.fillStyle = "rgb(255,255,255)",a.fillText(e,i,n)
-            }("Select block",480 * t * .5,40 * t);
+            }("블록 선택",480 * t * .5,40 * t);
           var e = 48 * t,
             r = 82 * t,
             o = null;
@@ -63583,39 +63583,39 @@
       });
       B.push(j);
       var H = [],
-        W = "ON";
-      e.settings.music || (W = "OFF");
+        W = "켬";
+      e.settings.music || (W = "끔");
       var X = x("음악: " + W,0,-20,function(){
         e.emit("toggleMusic");
-        var t = "ON";
-        e.settings.music || (t = "OFF");
+        var t = "켬";
+        e.settings.music || (t = "끔");
         X.str = "음악: " + t,X.over = !0,_e.redraw()
       });
       H.push(X);
-      var W = "ON";
-      e.settings.sound || (W = "OFF");
+      var W = "켬";
+      e.settings.sound || (W = "끔");
       var Y = x("효과음: " + W,0,20,function(){
         e.emit("toggleSound");
-        var t = "ON";
-        e.settings.sound || (t = "OFF");
+        var t = "켬";
+        e.settings.sound || (t = "끔");
         Y.str = "효과음: " + t,Y.over = !0,_e.redraw()
       });
       H.push(Y);
-      var W = "ON";
-      e.settings.invert || (W = "OFF");
+      var W = "켬";
+      e.settings.invert || (W = "끔");
       var K = x("마우스 뒤집기: " + W,0,60,function(){
         e.emit("toggleInvertMouse");
-        var t = "ON";
-        e.settings.invert || (t = "OFF");
+        var t = "켬";
+        e.settings.invert || (t = "끔");
         K.str = "마우스 뒤집기: " + t,K.over = !0,_e.redraw()
       });
       H.push(K);
-      var W = "ON";
-      e.settings.fps || (W = "OFF");
+      var W = "켬";
+      e.settings.fps || (W = "끔");
       var Q = x("FPS 상태: " + W,0,100,function(){
         e.emit("toggleFps");
-        var t = "ON";
-        e.settings.fps || (t = "OFF");
+        var t = "켬";
+        e.settings.fps || (t = "끔");
         Q.str = "FPS 상태: " + t,Q.over = !0,_e.redraw()
       });
       H.push(Q);
@@ -63625,10 +63625,10 @@
         1 == e.settings.drawDistance && (t = "보통");
         2 == e.settings.drawDistance && (t = "짧음");
         3 == e.settings.drawDistance && (t = "쪼꼬미");
-        q.str = "Render distance: " + t,q.over = !0,_e.redraw()
+        q.str = "렌더 거리: " + t,q.over = !0,_e.redraw()
       });
       H.push(q);
-      var Z = x("키 설정...",0,200,function(){
+      var Z = x("조작...",0,200,function(){
         F = ae,_e.redraw(),u = null
       });
       H.push(Z);
@@ -63727,7 +63727,7 @@
             var e = Math.floor(.5 * c) - 120 * r,
               t = Math.floor(.5 * s),
               i = "게임 메뉴";
-            F == H && (i = "Options",e -= 40 * r),F == $ && (i = "Generate new level"),F == re && (i = "Save level"),F == oe && (i = "Load level"),F == ae && (i = "Controls",e -= 40 * r),A(i,t,e),F != re && F != oe || A("<html>",t,e + 120 * r);
+            F == H && (i = "옵션",e -= 40 * r),F == $ && (i = "새로운 레벨 생성..."),F == re && (i = "레벨 저장"),F == oe && (i = "레벨 가져오기"),F == ae && (i = "조작",e -= 40 * r),A(i,t,e),F != re && F != oe || A("<html>",t,e + 120 * r);
             for (var n = 0; n < F.length; n++) F[n].draw();
             if (F == B && _){
               var o = 300 * r,
