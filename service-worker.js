@@ -1,5 +1,5 @@
 self.Minefork = {
-  version: `Minefork v${1.04}`,
+  version: `Minecraft Classic`,
   cache: true
 };
 self.addEventListener("activate",event => {
