@@ -63558,126 +63558,126 @@
       }
       var F = null,
         B = [],
-        N = x("Options...",0,20,C);
+        N = x("설정...",0,20,C);
       B.push(N);
-      var k = x("Generate new level...",0,60,function(){
+      var k = x("새로운 레벨 생성...",0,60,function(){
         F = $,_e.redraw(),u = null
       });
       if (B.push(k),!_ || i){
-        var U = x("Save level..",0,100,function(){
+        var U = x("레벨 저장..",0,100,function(){
           F = re,_e.redraw(),u = null
         });
         B.push(U);
-        var V = x("Load level..",0,140,function(){
+        var V = x("레벨 가져오기..",0,140,function(){
           F = oe,_e.redraw(),u = null
         });
         B.push(V)
       } else {
-        var G = x("Copy",0,140,P);
+        var G = x("복사",0,140,P);
         B.push(G);
         var z = x("Copy Hidden",0,100,P);
         B.push(z)
       }
-      var j = x("Back to game",0,230,function(){
+      var j = x("게임으로 돌아가기",0,230,function(){
         _e.close()
       });
       B.push(j);
       var H = [],
         W = "ON";
       e.settings.music || (W = "OFF");
-      var X = x("Music: " + W,0,-20,function(){
+      var X = x("음악: " + W,0,-20,function(){
         e.emit("toggleMusic");
         var t = "ON";
         e.settings.music || (t = "OFF");
-        X.str = "Music: " + t,X.over = !0,_e.redraw()
+        X.str = "음악: " + t,X.over = !0,_e.redraw()
       });
       H.push(X);
       var W = "ON";
       e.settings.sound || (W = "OFF");
-      var Y = x("Sound: " + W,0,20,function(){
+      var Y = x("효과음: " + W,0,20,function(){
         e.emit("toggleSound");
         var t = "ON";
         e.settings.sound || (t = "OFF");
-        Y.str = "Sound: " + t,Y.over = !0,_e.redraw()
+        Y.str = "효과음: " + t,Y.over = !0,_e.redraw()
       });
       H.push(Y);
       var W = "ON";
       e.settings.invert || (W = "OFF");
-      var K = x("Invert mouse: " + W,0,60,function(){
+      var K = x("마우스 뒤집기: " + W,0,60,function(){
         e.emit("toggleInvertMouse");
         var t = "ON";
         e.settings.invert || (t = "OFF");
-        K.str = "Invert mouse: " + t,K.over = !0,_e.redraw()
+        K.str = "마우스 뒤집기: " + t,K.over = !0,_e.redraw()
       });
       H.push(K);
       var W = "ON";
       e.settings.fps || (W = "OFF");
-      var Q = x("Show FPS: " + W,0,100,function(){
+      var Q = x("FPS 상태: " + W,0,100,function(){
         e.emit("toggleFps");
         var t = "ON";
         e.settings.fps || (t = "OFF");
-        Q.str = "Show FPS: " + t,Q.over = !0,_e.redraw()
+        Q.str = "FPS 상태: " + t,Q.over = !0,_e.redraw()
       });
       H.push(Q);
-      var q = x("Render distance: FAR",0,140,function(){
+      var q = x("렌더 거리: 멈",0,140,function(){
         e.emit("cycleDrawDistance");
-        var t = "FAR";
-        1 == e.settings.drawDistance && (t = "NORMAL");
-        2 == e.settings.drawDistance && (t = "SHORT");
-        3 == e.settings.drawDistance && (t = "TINY");
+        var t = "멈";
+        1 == e.settings.drawDistance && (t = "보통");
+        2 == e.settings.drawDistance && (t = "짧음");
+        3 == e.settings.drawDistance && (t = "쪼꼬미");
         q.str = "Render distance: " + t,q.over = !0,_e.redraw()
       });
       H.push(q);
-      var Z = x("Controls...",0,200,function(){
+      var Z = x("키 설정...",0,200,function(){
         F = ae,_e.redraw(),u = null
       });
       H.push(Z);
-      var J = x("Done",0,260,S);
+      var J = x("완료",0,260,S);
       H.push(J);
       var $ = [],
-        ee = x("Small",0,50,function(){
-          R("small")
+        ee = x("최소",0,50,function(){
+          R("최소")
         });
       $.push(ee);
-      var te = x("Normal",0,100,function(){
-        R("normal")
+      var te = x("중간",0,100,function(){
+        R("중간")
       });
       $.push(te);
-      var ie = x("Huge",0,150,function(){
-        R("huge")
+      var ie = x("넓음",0,150,function(){
+        R("넓음")
       });
       $.push(ie);
-      var ne = x("Cancel",0,200,S);
+      var ne = x("취소",0,200,S);
       $.push(ne);
       var re = [],
-        ne = x("Cancel",0,260,S);
+        ne = x("취소",0,260,S);
       re.push(ne);
       var oe = [],
-        ne = x("Cancel",0,260,S);
+        ne = x("취소",0,260,S);
       oe.push(ne);
       var ae = [],
-        se = x("Forward: " + L(e.settings.forward).toUpperCase(),-115,-20,M);
+        se = x("앞: " + L(e.settings.forward).toUpperCase(),-115,-20,M);
       ae.push(se);
-      var ce = x("Left: " + L(e.settings.left).toUpperCase(),115,-20,M);
+      var ce = x("왼쪽: " + L(e.settings.left).toUpperCase(),115,-20,M);
       ae.push(ce);
-      var j = x("Back: " + L(e.settings.backward).toUpperCase(),-115,20,M);
+      var j = x("뒤: " + L(e.settings.backward).toUpperCase(),-115,20,M);
       ae.push(j);
-      var ue = x("Right: " + L(e.settings.right).toUpperCase(),115,20,M);
+      var ue = x("오른쪽: " + L(e.settings.right).toUpperCase(),115,20,M);
       ae.push(ue);
-      var le = x("Jump: " + L(e.settings.jump).toUpperCase(),-115,60,M);
+      var le = x("점프: " + L(e.settings.jump).toUpperCase(),-115,60,M);
       ae.push(le);
-      var he = x("Build: " + L(e.settings.build).toUpperCase(),115,60,M);
+      var he = x("설치: " + L(e.settings.build).toUpperCase(),115,60,M);
       ae.push(he);
-      var fe = x("Chat: " + L(e.settings.chat).toUpperCase(),-115,100,M);
+      var fe = x("채팅: " + L(e.settings.chat).toUpperCase(),-115,100,M);
       ae.push(fe);
-      var de = x("Toggle fog: " + L(e.settings.fog).toUpperCase(),115,100,M);
+      var de = x("렌더 토글: " + L(e.settings.fog).toUpperCase(),115,100,M);
       ae.push(de);
-      var pe = x("Save location: " + L(e.settings.saveLoc).toUpperCase(),-115,140,M);
+      var pe = x("넴주 등록: " + L(e.settings.saveLoc).toUpperCase(),-115,140,M);
       ae.push(pe);
-      var me = x("Load location: " + L(e.settings.loadLoc).toUpperCase(),115,140,M);
+      var me = x("넴주 이동: " + L(e.settings.loadLoc).toUpperCase(),115,140,M);
       ae.push(me);
       se.widthscale = .7,ce.widthscale = .7,j.widthscale = .7,ue.widthscale = .7,le.widthscale = .7,he.widthscale = .7,fe.widthscale = .7,de.widthscale = .7,pe.widthscale = .7,me.widthscale = .7,se.key = "forward",ce.key = "left",j.key = "backward",ue.key = "right",le.key = "jump",he.key = "build",fe.key = "chat",de.key = "fog",pe.key = "saveLoc",me.key = "loadLoc";
-      var J = x("Done",0,260,C);
+      var J = x("완료",0,260,C);
       ae.push(J),F = B;
       var ge = "ontouchstart" in window || navigator.msMaxTouchPoints,
         _e = {
@@ -63726,7 +63726,7 @@
             m.clearRect(0,0,s,c),m.strokeStyle = "rgba(255,255,255,1)",m.lineWidth = r,m.fillStyle = "rgba(0,0,0,0.6)",m.fillRect(0,0,s,c);
             var e = Math.floor(.5 * c) - 120 * r,
               t = Math.floor(.5 * s),
-              i = "Game menu";
+              i = "게임 메뉴";
             F == H && (i = "Options",e -= 40 * r),F == $ && (i = "Generate new level"),F == re && (i = "Save level"),F == oe && (i = "Load level"),F == ae && (i = "Controls",e -= 40 * r),A(i,t,e),F != re && F != oe || A("<html>",t,e + 120 * r);
             for (var n = 0; n < F.length; n++) F[n].draw();
             if (F == B && _){
