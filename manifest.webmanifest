@@ -1,7 +1,7 @@
 {
-  "name": "Minefork",
-  "short_name": "Minefork",
-  "description": "A modern fork of classic.minecraft.net!",
+  "name": "Minecraft Classic",
+  "short_name": "Minecraft Classic",
+  "description": "Minecraft Classic",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
