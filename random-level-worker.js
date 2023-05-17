@@ -549,11 +549,11 @@ var RandomLevel = function(){
     }
     progress.percent = 100;
     self.postMessage(progress);
-    progress.string = "용암 생성 중...";
+    progress.string = "레벨 생성 중...";
     this.melt();
-    progress.string = "성장 중...";
+    progress.string = "레벨 생성 중...";
     this.grow(aint);
-    progress.string = "나무 생성 중...";
+    progress.string = "레벨 생성 중...";
     this.plant(aint);
     progress.tiles = this.tiles;
     progress.string = "";
