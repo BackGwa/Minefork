@@ -63498,8 +63498,8 @@
         },
         C = function(){
           null != f && (O(),f = null);
-          var t = "FAR";
-          1 == e.settings.drawDistance && (t = "NORMAL"),2 == e.settings.drawDistance && (t = "SHORT"),3 == e.settings.drawDistance && (t = "TINY"),q.str = "Render distance: " + t,F = H,_e.redraw(),u = null
+          var t = "멈";
+          1 == e.settings.drawDistance && (t = "보통"),2 == e.settings.drawDistance && (t = "짧음"),3 == e.settings.drawDistance && (t = "쪼꼬미"),q.str = "렌더 거리: " + t,F = H,_e.redraw(),u = null
         };
       function P(){
         var e = document.querySelector(".js-copytextarea");
@@ -63767,10 +63767,10 @@
               i = 13 * t,
               r = 2 * t;
             n.fillStyle = "rgb(63,63,63)",n.fillText(o.version,e + r,i + r);
-            o.showFps && n.fillText(o.fps + " fps, " + o.chunkUpdates + " chunk updates",e + r,2 * i + 4 * t + r);
+            o.showFps && n.fillText(o.fps + " fps, " + o.chunkUpdates + " 청크 업데이트",e + r,2 * i + 4 * t + r);
             n.fillStyle = "rgb(255,255,255)";
             n.fillText(o.version,e,i);
-            o.showFps && n.fillText(o.fps + " fps, " + o.chunkUpdates + " chunk updates",e,2 * i + 4 * t);
+            o.showFps && n.fillText(o.fps + " fps, " + o.chunkUpdates + " 청크 업데이트",e,2 * i + 4 * t);
             o.chunkUpdates = 0;
           }
         },
