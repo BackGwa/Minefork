@@ -385,8 +385,7 @@ var RandomLevel = function(){
       }
       return k2;
     }
-    progress.string = "Raising..";
-    //this.progressRenderer.progressStage("Raising..");
+    progress.string = "레벨 생성 중...";
     var distort = new Distort(new PerlinNoise(this.random,8),new PerlinNoise(this.random,8));
     var distort1 = new Distort(new PerlinNoise(this.random,8),new PerlinNoise(this.random,8));
     var perlinnoise = new PerlinNoise(this.random,8);
@@ -411,7 +410,7 @@ var RandomLevel = function(){
         aint[l + i1 * xSize] = d2;
       }
     }
-    progress.string = "Eroding..";
+    progress.string = "레벨 생성 중...";
     //this.progressRenderer.progressStage("Eroding..");
     var aint1 = aint;
     distort1 = new Distort(new PerlinNoise(this.random,8),new PerlinNoise(this.random,8));
@@ -433,7 +432,7 @@ var RandomLevel = function(){
         }
       }
     }
-    progress.string = "Soiling..";
+    progress.string = "레벨 생성 중...";
     //this.progressRenderer.progressStage("Soiling..");
     aint1 = aint;
     var j2 = this.xSize;
@@ -463,7 +462,7 @@ var RandomLevel = function(){
         }
       }
     }
-    progress.string = "Carving..";
+    progress.string = "레벨 생성 중...";
     //this.progressRenderer.progressStage("Carving..");
     k2 = this.xSize;
     j1 = this.zSize;
@@ -516,7 +515,7 @@ var RandomLevel = function(){
     this.placeOre(20,90,1,4); // coal
     this.placeOre(19,70,2,4); // iron
     this.placeOre(18,50,3,4); // gold
-    progress.string = "Watering..";
+    progress.string = "레벨 생성 중...";
     //this.progressRenderer.progressStage("Watering..");
     //long i5 = System.nanoTime();
     var i5 = random.nextFloat(); //Math.random();
@@ -550,11 +549,11 @@ var RandomLevel = function(){
     }
     progress.percent = 100;
     self.postMessage(progress);
-    progress.string = "맵 생성 중...";
+    progress.string = "용암 생성 중...";
     this.melt();
-    progress.string = "맵 생성 중...";
+    progress.string = "성장 중...";
     this.grow(aint);
-    progress.string = "맵 생성 중...";
+    progress.string = "나무 생성 중...";
     this.plant(aint);
     progress.tiles = this.tiles;
     progress.string = "";
