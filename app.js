@@ -4811,16 +4811,16 @@
         },
         sendMessage: function(e){
           if (0 == e.indexOf("/")){
-            var t = 'Unknown command. Type "/help" for help.';
-            if (0 == e.indexOf("/ban") && (t = "Command disabled."),0 == e.indexOf("/banip") && (t = "Command disabled."),0 == e.indexOf("/say") && (t = "Command disabled."),0 == e.indexOf("/deop") && (t = "Command disabled."),0 == e.indexOf("/kick")){
+            var t = '알 수 없는 명령어 입니다. "/help"를 입력하여 명령어를 참고하세요.';
+            if (0 == e.indexOf("/ban") && (t = "해당 명령어는 비활성화 되어있습니다."),0 == e.indexOf("/banip") && (t = "해당 명령어는 비활성화 되어있습니다."),0 == e.indexOf("/say") && (t = "해당 명령어는 비활성화 되어있습니다."),0 == e.indexOf("/deop") && (t = "해당 명령어는 비활성화 되어있습니다."),0 == e.indexOf("/kick")){
               var i = e.substr(e.indexOf("kick") + 5).trim();
               t = u.getInstance().kickPlayer(i)
             }
-            if (0 == e.indexOf("/op") && (t = "Command disabled."),0 == e.indexOf("/tp")){
+            if (0 == e.indexOf("/op") && (t = "해당 명령어는 비활성화 되어있습니다."),0 == e.indexOf("/tp")){
               var n = e.substr(e.indexOf("tp") + 3).trim();
               t = u.getInstance().teleportToPlayer(n)
             }
-            return 0 == e.indexOf("/unban") && (t = "Command disabled."),0 == e.indexOf("/setspawn") && (t = u.getInstance().setSpawn()),0 == e.indexOf("/solid") && (t = "Command disabled."),0 == e.indexOf("/list") && (t = JSON.stringify(u.getInstance().getPlayerNames()).slice(1,-1)),0 == e.indexOf("/help") && (t = "Available Commands: /list /kick /tp /setspawn /help"),l.push({
+            return 0 == e.indexOf("/unban") && (t = "해당 명령어는 비활성화 되어있습니다."),0 == e.indexOf("/setspawn") && (t = u.getInstance().setSpawn()),0 == e.indexOf("/solid") && (t = "해당 명령어는 비활성화 되어있습니다."),0 == e.indexOf("/list") && (t = JSON.stringify(u.getInstance().getPlayerNames()).slice(1,-1)),0 == e.indexOf("/help") && (t = "활성 명령어: /list /kick /tp /setspawn /help"),l.push({
               type: "local",
               message: t,
               from: "",
